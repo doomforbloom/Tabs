@@ -2,12 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tabs</title>
   </head>
   <body>
-    
+    <ul class="tabs">
+      <li class="active" id="First"><h3>First Tab</h3></li>
+      <li id="Second"><h3>Second Tab</h3></li>
+      <li id="Third"><h3>Third Tab</h3></li>
+      <li id="Fourth"><h3>Fourth Tab</h3></li>
+    </ul>
+    <section>
+      <h2 id="topText">Clicking on each tab should hide the content of the other tab and show the content of the clicked tab. By default, enable the first tab.</h2>
+      <div>
+        <h3 id="content">First Tab content to be displayed here.</h3>
+      </div>
+      <h2 id="bottomText">Add some dummy content or just add a simple text showing this tab</h2>
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
